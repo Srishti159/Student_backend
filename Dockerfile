@@ -5,7 +5,7 @@ FROM openjdk:17-jdk-slim
 WORKDIR /app
 
 # Copy the Spring Boot JAR file to the container
-COPY backend/target/studentmanagement-0.0.1-SNAPSHOT.jar.jar app.jar
+COPY target/studentmanagement-0.0.1-SNAPSHOT.jar.jar app.jar
 
 # Expose the port your Spring Boot app runs on
 EXPOSE 8080
